@@ -77,14 +77,20 @@ var layout = {
 	title: '<b>AND</b>',
 	xaxis: {
 		title: 'Var 2',
-		showgrid: false,
+		showgrid: true,
 		zeroline: false,
 		range: [-1,2]
 	},
-		yaxis: {
+	yaxis: {
 		title: 'Var 1',
 		showline: false,
+		zeroline: false,
 		range: [-1,2]
+	},
+	legend: {
+		"orientation": "h",
+		x:0.2,
+		y:1.15
 	}
 };
 
