@@ -13,18 +13,18 @@
   <body class="container">
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbar-dark">
   <div class="container">
-  <a class="navbar-brand" href="#">Single Artificial Neuron</a>
+  <a class="navbar-brand" href="#">Descendant Gradient</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-sm">Explanation</a>
+	  <a class="nav-item nav-link" href="index.html" >Single Artificial Neuron</a>
     </div>
   </div>
   </div>
 </nav>
-
 
 	<div class="row" id="content">
 		<div class="col-12 col-md-8">
@@ -55,7 +55,7 @@
 					<input type="text" class="form-control" id="epsilonInput" placeholder="0.0001">
 				  </div>
 				  
-				  <button type="button" class="btn btn-primary" onclick="run()">Solve</button>
+				  <button type="button" class="btn btn-primary" onclick="run()">Run</button>
 				  <button type="button" class="btn btn-warning" onclick="randomInitialX()">Random x</button>
 				  <br />
 				  <hr />
@@ -76,9 +76,25 @@
         </button>
       </div>
       <div class="modal-body">
-        <p>This page presents a visual example of a single artificial neuron fiting over the logical port 'AND' problem.</p> 
-		<p>The parameters at 'Options' section can be used to control Perceptron or Adaline behavior. </p>
-		<p>The initial values of weights (W) and bias are randomly generated, then, they are updated according to the selected algorithm.</p>
+        <p>This page presents a visual example on how descendant gradient works.</p> 
+		<p>Gradient Descendant is usually applied to guide the synaptic weights adjustment in neural networks.</p>
+		<p>The parameters at 'Options' section can be used to control animation.</p>
+      </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="explain">
+	  <div class="modal-dialog modal-sm">
+		<div class="modal-content">
+		  <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Process stoped</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>The gradient is already very low.</p>
       </div>
 		</div>
 	  </div>
@@ -87,7 +103,8 @@
 	<div class="fixed-bottom bg-light" id="footer"> 
 		<div class="container">I4soft - Intelligence for Software</div> 
 	</div>
-	  
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>	
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script src="assets/js/gradient.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

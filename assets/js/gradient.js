@@ -2,15 +2,15 @@ var alpha;
 var bias;
 
 var layout = {
-	title: '<b>Descendant Gradient</b>',
+	
 	xaxis: {
-		title: 'x',
+		title: '<b>x</b>',
 		showgrid: true,
 		zeroline: false,
 		range: [-3,4]
 	},
 	yaxis: {
-		title: 'f(x)',
+		title: '<b>f(x)</b>',
 		showline: false,
 		zeroline: false,
 		range: [-10,40]
@@ -46,7 +46,7 @@ Plotly.plot('graph', [{
 	  shape:'spline',
   	  width: 4
   },
-  name: 'function'
+  name: 'f(x) = x<sup>4</sup> - 3x<sup>3</sup> + 2'
 }, dot ], layout);
 
 function randomInitialX(){
@@ -70,7 +70,8 @@ function donwing() {
 	let newX = calcNewX(currentX);
 	
 	if(Math.abs(currentX - newX) < epsilon){
-	  alert("Process stoped. Gradient is already very low");
+	  
+	  $('#explain').modal('show');
 	  stopAnimation();  
 	}
 	
