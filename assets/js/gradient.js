@@ -49,6 +49,16 @@ Plotly.plot('graph', [{
     name: 'f(x) = x<sup>4</sup> - 3x<sup>3</sup> + 2'
 }, dot], layout);
 
+var myPlot = document.getElementById('graph');
+
+myPlot.on('plotly_click', function(data){
+	
+	dot['x'][0] = data.points[0].x;
+    dot['y'][0] = calcY(dot['x']);
+    Plotly.redraw('graph');
+	
+});
+
 function randomInitialX() {
     dot['x'][0] = Math.random() * (3.7 + 2) - 2;
     dot['y'][0] = calcY(dot['x']);
@@ -63,11 +73,11 @@ function run() {
     epsilon = ($('#epsilonInput').val() != 0) ? $('#epsilonInput').val() : 0.001;
     delay = ($('#delayInput').val() != 0) ? $('#delayInput').val() : 20;
     varAnimation = setInterval(function() {
-        donwing()
+        downing()
     }, delay);
 }
 
-function donwing() {
+function downing() {
     let currentX = dot['x'][0];
     let newX = calcNewX(currentX);
 
