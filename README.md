@@ -23,7 +23,7 @@ This page presents a visual example on how Descendant Gradient works in finding 
 You can choice a start point by hitting at the graph or clicking in 'Random x' button.
 
 ![alt text](https://github.com/altinodantas/singleArtificialNeuron/blob/master/assets/img/gradient.png "Gradient Example")
----
+***
 The parameters at 'Options' section may be used to control the behavior of each example.
 
 #### External libs
