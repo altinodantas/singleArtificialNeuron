@@ -33,7 +33,7 @@ var dot = {
     x: [initialX],
     y: [calcY(initialX)],
     mode: 'markers',
-    name: 'dot',
+    name: '<i><b>dot</b></i>',
     marker: {
         'size': 10
     }
@@ -46,7 +46,7 @@ Plotly.plot('graph', [{
         shape: 'spline',
         width: 4
     },
-    name: 'f(x) = x<sup>4</sup> - 3x<sup>3</sup> + 2'
+    name: '<i><b>f(x) = x<sup>4</sup> - 3x<sup>3</sup> + 2</b></i>'
 }, dot], layout);
 
 var myPlot = document.getElementById('graph');
