@@ -1,6 +1,6 @@
-# singleArtificialNeuron
+# Single Artificial Neuron
 
-This repor presents some animated charts for basic examples of Perceptron, Adaline and Descendant Gradient procedure.
+is a webpage that presents some animated charts for basic examples of Perceptron, Adaline and Descendant Gradient procedure.
 
 For Perceptron and Adaline examples, the initial values of weights (W) and bias are randomly generated and updated according to the selected algorithm.
 
@@ -24,4 +24,8 @@ You can choice a start point by hitting at the graph or clicking in 'Random x' b
 
 ![alt text](https://github.com/altinodantas/singleArtificialNeuron/blob/master/assets/img/gradient.png "Gradient Example")
 ---
-The parameters at 'Options' section can be used to control Perceptron or Adaline behavior.
+The parameters at 'Options' section may be used to control the behavior of each example.
+
+#### External libs
+  - jQuery
+  - Plotly
