@@ -1,6 +1,6 @@
 # Single Artificial Neuron
 
-is a webpage that presents some animated charts for basic examples of Perceptron, Adaline and Gradient Descent procedure.
+It's a webpage that presents some animated charts for basic examples of Perceptron, Adaline and Gradient Descent procedure.
 
 For Perceptron and Adaline examples, the initial values of weights (W) and bias are randomly generated and updated according to the selected algorithm.
 
